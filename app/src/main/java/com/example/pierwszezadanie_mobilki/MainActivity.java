@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int currentIndex = 0;
     private int pointsForGoodAnswer = 0;
+    private boolean questionAnswered = false;
     private String pointsString = "Punkty: 0";
 
     protected void setNextQuestion(){
@@ -38,8 +39,14 @@ public class MainActivity extends AppCompatActivity {
         int resultMessageId = 0;
         if (userAnswer == correctAnswer){
             resultMessageId = R.string.correct_answer;
-            pointsForGoodAnswer += 1;
-            pointsString = "Punkty: " + pointsForGoodAnswer;
+
+            if(questionAnswered == false)
+            {
+                pointsForGoodAnswer += 1;
+                pointsString = "Punkty: " + pointsForGoodAnswer;
+                questionAnswered = true;
+            }
+
         } else {
             resultMessageId = R.string.incorrect_answer;
         }
@@ -75,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 currentIndex = (currentIndex + 1)%questions.length;
+                questionAnswered = false;
                 setNextQuestion();
             }
         });
