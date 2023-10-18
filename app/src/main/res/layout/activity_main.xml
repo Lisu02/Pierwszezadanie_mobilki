@@ -48,4 +48,12 @@
         android:layout_gravity="center"
         android:text="@string/button_next" />
 
+    <TextView
+        android:id="@+id/points_Text_View"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Punkty: " />
+
 </LinearLayout>

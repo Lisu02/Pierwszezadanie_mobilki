@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button falseButton;
     private Button nextButton;
     private TextView questionTextView;
+    private TextView pointsTextView;
 
     private Question[] questions = new Question[] {
             new Question(R.string.q_activity,true),
@@ -24,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private int currentIndex = 0;
+    private int pointsForGoodAnswer = 0;
+    private String pointsString = "Punkty: 0";
 
     protected void setNextQuestion(){
         questionTextView.setText(questions[currentIndex].getQuestionId());
+        pointsTextView.setText(pointsString);
     }
 
     private void checkAnswerCorrectness(boolean userAnswer){
@@ -34,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         int resultMessageId = 0;
         if (userAnswer == correctAnswer){
             resultMessageId = R.string.correct_answer;
+            pointsForGoodAnswer += 1;
+            pointsString = "Punkty: " + pointsForGoodAnswer;
         } else {
             resultMessageId = R.string.incorrect_answer;
         }
@@ -49,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         falseButton = findViewById(R.id.button_false);
         nextButton = findViewById(R.id.button_next);
         questionTextView = findViewById(R.id.question_text_view);
+        pointsTextView = findViewById(R.id.points_Text_View);
 
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
