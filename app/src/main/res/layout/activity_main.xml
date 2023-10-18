@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <!-- Tekst na środku -->
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="cokolwiekkk" />
+
+    <!-- Przyciski w jednym wierszu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_true" />
+
+        <Button
+            android:id="@+id/button_false"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_false" />
+
+    </LinearLayout>
+
+    <!-- Przycisk na dole -->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_next" />
+
+</LinearLayout>
