@@ -1,6 +1,7 @@
 package com.example.pierwszezadanie_mobilki;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d("Create","Start metody onCreate");
 
         trueButton = findViewById(R.id.button_true);
         falseButton = findViewById(R.id.button_false);
@@ -88,4 +90,33 @@ public class MainActivity extends AppCompatActivity {
         });
         setNextQuestion();
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("onStart","Uruchomienie cyklu onStart");
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("onResume","Uruchomienie cyklu onResume");
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("onPause","Uruchomienie cyklu onPause");
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("onStop","Uruchomienie cyklu onStop");
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("onDestroy","Uruchomienie cyklu onDestroy");
+    }
+
+
+
+
 }
