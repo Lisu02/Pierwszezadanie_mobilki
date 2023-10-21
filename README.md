@@ -7,3 +7,4 @@ odpowiadając na to samo pytanie bez klikania następne.
 
 ![Zrzut ekranu 2023-10-18 220447](https://github.com/Lisu02/Pierwszezadanie_mobilki/assets/104763694/8d96d463-fb7c-47ac-b039-4f5ef7bef6f1)
 
+![LogMobilne](https://github.com/Lisu02/Pierwszezadanie_mobilki/assets/104763694/aaf55c1c-aeb2-4a2a-aac6-3cb7047f7079)
