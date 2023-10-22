@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String KEY_CURRENT_INDEX = "currentIndex";
     private Button trueButton;
     private Button falseButton;
     private Button nextButton;
@@ -59,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("Create","Start metody onCreate");
+
+        if (savedInstanceState != null){
+            currentIndex = savedInstanceState.getInt(KEY_CURRENT_INDEX);
+        }
 
         trueButton = findViewById(R.id.button_true);
         falseButton = findViewById(R.id.button_false);
@@ -114,6 +119,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d("onDestroy","Uruchomienie cyklu onDestroy");
+        //onSaveInstanceState();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        Log.d("QUIZ_TAG","Wywołana została metoda: onSaveInstanceState");
+        outState.putInt(KEY_CURRENT_INDEX,currentIndex);
     }
 
 
