@@ -11,7 +11,9 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
-@
-local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
 s
 Capp/src/main/java/com/example/pierwszezadanie_mobilki/Question.java,5\5\5526f4d35f1a348a4172296ce9e247ca4c144b11
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+y
+Iapp/src/main/java/com/example/pierwszezadanie_mobilki/PromptActivity.java,b\a\ba2898f7b5e26a897cc2c27db72526ee1685171a

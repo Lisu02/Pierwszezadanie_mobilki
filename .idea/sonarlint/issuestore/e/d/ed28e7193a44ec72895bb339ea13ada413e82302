@@ -1,13 +1,22 @@
 
 J
-java:S16045"(Make this anonymous inner class a lambda(Üà¨¯üÿÿÿÿ8ï¥Şó³1
-E
-java:S1604<"(Make this anonymous inner class a lambda(éäó‚8ğ¥Şó³1
+java:S1604Z"(Make this anonymous inner class a lambda(¹ª¼Üıÿÿÿÿ8Ì‹‹’¶1
 J
-java:S1604C"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8ğ¥Şó³1
+java:S1604e"(Make this anonymous inner class a lambda(Üà¨¯üÿÿÿÿ8Ì‹‹’¶1
+E
+java:S1604l"(Make this anonymous inner class a lambda(éäó‚8Ì‹‹’¶1
+J
+java:S1604s"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8Ì‹‹’¶1
 w
-java:S1450"ZRemove the "falseButton" field and declare it as a local variable in the relevant methods.(Ôœ8…§Şó³1
+java:S1450"ZRemove the "falseButton" field and declare it as a local variable in the relevant methods.(Ôœ8ŠŒ‹’¶1
 {
-java:S1450"YRemove the "nextButton" field and declare it as a local variable in the relevant methods.(º€ü‰ùÿÿÿÿ8…§Şó³1
+java:S1450"YRemove the "nextButton" field and declare it as a local variable in the relevant methods.(º€ü‰ùÿÿÿÿ8ŠŒ‹’¶1
+
+java:S1450"_Remove the "podpowiedzButton" field and declare it as a local variable in the relevant methods.(ìŒ¹šúÿÿÿÿ8ŠŒ‹’¶1
 {
-java:S1450"YRemove the "trueButton" field and declare it as a local variable in the relevant methods.(Ãş×Äüÿÿÿÿ8…§Şó³1
+java:S1450"YRemove the "trueButton" field and declare it as a local variable in the relevant methods.(Ãş×Äüÿÿÿÿ8ŠŒ‹’¶1
+D
+java:S11259"'Remove the unnecessary boolean literal.(€¢ÜÖ8“Œ‹’¶1
+[
+java:S1874`">Remove this use of "startActivityForResult"; it is deprecated.(îü‰”8Œ‹’¶1
+^	java:S125™"<This block of commented-out lines of code should be removed.(êÕã–ıÿÿÿÿ8£Œ‹’¶1
